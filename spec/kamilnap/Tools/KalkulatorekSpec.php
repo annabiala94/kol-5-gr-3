@@ -11,4 +11,9 @@ class KalkulatorekSpec extends ObjectBehavior
     {
         $this->shouldHaveType('kamilnap\Tools\Kalkulatorek');
     }
+    
+    function it_should_calculate_sum()
+{
+    $this->setA(5)->setB(15)->setH(1)->sum()->shouldReturn(10);
+}
 }
