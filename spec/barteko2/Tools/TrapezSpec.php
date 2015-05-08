@@ -18,4 +18,9 @@ class TrapezSpec extends ObjectBehavior
         $this->setB(987)->getB()->shouldReturn(987);
         $this->setH(967)->getH()->shouldReturn(967);
     }
+    
+    function it_should_trapez_pole()
+{
+    $this->setA(5)->setB(7)->setH(2)->poleTrapezu()->shouldReturn(12);
+}
 }

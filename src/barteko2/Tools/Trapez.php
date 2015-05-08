@@ -41,10 +41,7 @@ class Trapez
     {
         return $this->h;
     }
-    function it_should_trapez_pole()
-{
-    $this->setA(5)->setB(7)->setH(2)->poleTrapezu()->shouldReturn(12);
-}
+    
     
 public function poleTrapezu()
 {
