@@ -11,4 +11,11 @@ class trapezSpec extends ObjectBehavior
     {
         $this->shouldHaveType('golabm1993\Tools\trapez');
     }
+    
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(567)->getA()->shouldReturn(567);
+        $this->setB(891)->getB()->shouldReturn(891);
+        $this->setH(234)->getH()->shouldReturn(234);
+    }
 }
