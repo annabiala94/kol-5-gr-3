@@ -18,4 +18,9 @@ class trapezSpec extends ObjectBehavior
         $this->setB(891)->getB()->shouldReturn(891);
         $this->setH(234)->getH()->shouldReturn(234);
     }
+    
+    function it_should_calculate_area()
+    {
+        $this->setA(5)->setB(7)->setH(2)->area()->shouldReturn(12);
+    }
 }
