@@ -44,4 +44,9 @@ class trapez
     {
         return $this->h;
     }
+    
+    public function field()
+{
+    return ($this->a + $this->b)*$this->h/2;
+}
 }

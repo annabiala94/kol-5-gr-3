@@ -17,4 +17,8 @@ class trapezSpec extends ObjectBehavior
         $this->setB(987)->getB()->shouldReturn(987);
         $this->setH(456)->getH()->shouldReturn(456);
     }
+    function it_should_calculate_field()
+{
+    $this->setA(4)->setB(7)->setH(6)->field()->shouldReturn(33);
+}
 }
