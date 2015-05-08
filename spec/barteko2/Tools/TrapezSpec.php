@@ -11,4 +11,11 @@ class TrapezSpec extends ObjectBehavior
     {
         $this->shouldHaveType('barteko2\Tools\Trapez');
     }
+
+    function it_should_have_setter_and_gettter()
+    {
+        $this->setA(123)->getA()->shouldReturn(123);
+        $this->setB(987)->getB()->shouldReturn(987);
+        $this->setH(967)->getH()->shouldReturn(967);
+    }
 }
